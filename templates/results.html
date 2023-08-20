@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Phishing Email Detector - Results</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .header {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .result {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    .explanation {
+      font-size: 16px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">Analysis Results</div>
+    <div class="result">This email is classified as: {{ prediction_result }}</div>
+    <div class="explanation">{{ explanation }}</div>
+  </div>
+</body>
+</html>

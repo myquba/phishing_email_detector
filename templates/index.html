@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Phishing Email Detector</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .header {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .input-textarea {
+      width: 80%;
+      height: 200px;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    .submit-button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">Phishing Email Detector</div>
+    <form action="/results" method="post">
+      <textarea class="input-textarea" name="email_text" placeholder="Enter email text here"></textarea>
+      <input class="submit-button" type="submit" value="Analyze">
+    </form>
+  </div>
+</body>
+</html>
